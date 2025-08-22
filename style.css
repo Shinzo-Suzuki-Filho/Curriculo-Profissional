@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --background-color: #ecf0f1;
+  --text-color: #34495e;
+  --card-background: #ffffff;
+  --border-color: #bdc3c7;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: var(--card-background);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header-content h2 {
+  margin: 5px 0 15px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  color: var(--card-background);
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.habilidade-categoria h3 {
+  color: var(--secondary-color);
+  margin-top: 0;
+}
+
+.habilidade-categoria ul {
+  padding: 0;
+  list-style: none;
+}
+
+.habilidade-categoria li {
+  background-color: var(--background-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.job, .curso {
+  margin-bottom: 20px;
+}
+
+.job h3, .curso h3 {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.job p, .curso p {
+  margin: 5px 0;
+}
+
+.job ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#idiomas ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
